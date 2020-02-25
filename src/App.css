@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #192a56;
+}
+.App {
+  text-align: center;
+  text-transform: uppercase;
+}
+.App > h1 {
+  font-weight: bold;
+  font-size: 5em;
+}
+.App > h2 {
+  font-size: 2.5em;
+  line-height: 2.5em;
+}
+.btn {
+  width: auto !important;
+  text-align: center;
+  padding: auto !important;
+  text-transform: uppercase;
+}
