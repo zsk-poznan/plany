@@ -28,7 +28,6 @@ function App() {
   const [classes, setClasses] = useState(null);
   const [teachers, setTeachers] = useState(null);
   const [classrooms, setClassrooms] = useState(null);
-
   const [showMenu, setShowMenu] = useState(true);
 
   useEffect(() => {
@@ -47,9 +46,6 @@ function App() {
     const button = event.target;
     const content = button.innerHTML;
     setShowMenu(false);
-    /*fetch(
-      "https://kapskypl.github.io/planyn-backend/" + content + ".json"
-    ).then();*/
   }
 
   return (
@@ -68,7 +64,7 @@ function App() {
           <h2> Nauczyciele </h2>
           {teachers
             ? teachers.map(t => (
-                <Button className="btn" key={t}>
+                <Button className="btn" key={t} onClick={ShowClass}>
                   {t}
                 </Button>
               ))
@@ -76,7 +72,7 @@ function App() {
           <h2> Sale </h2>
           {classrooms
             ? classrooms.map(r => (
-                <Button className="btn" key={r}>
+                <Button className="btn" key={r} onClick={ShowClass}>
                   {r}
                 </Button>
               ))

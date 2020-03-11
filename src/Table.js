@@ -10,15 +10,7 @@ function Table({ type, id }) {
       .then(string => JSON.parse(string))
       .then(setPlan);
   }, [type, id]);
-  console.log("a");
-
-  return (
-    <table>
-      <tr>
-        <td></td>
-      </tr>
-    </table>
-  );
+  return <div></div>;
 }
 
 export default Table;
